@@ -1,5 +1,6 @@
 import React from 'react'
 import logoStoica from '../../img/logo/logoStoica.png'
+import CartWidget from '../CartWidget/CartWidget'
 import '../Navbar.css'
 
 const Navbar = () => {
@@ -14,18 +15,16 @@ const Navbar = () => {
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Men</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Women</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#">Kids</a>
         </li>
       </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
+      <CartWidget />
     </div>
   </div>
 </nav>
