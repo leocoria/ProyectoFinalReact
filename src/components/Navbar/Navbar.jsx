@@ -1,7 +1,7 @@
 import React from 'react'
 import logoStoica from '../../img/logo/logoStoica.png'
 import CartWidget from '../CartWidget/CartWidget'
-import '../Navbar.css'
+import './Navbar.css'
 
 const Navbar = () => {
   return (
