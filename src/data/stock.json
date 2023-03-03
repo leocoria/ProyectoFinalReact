@@ -1,0 +1,155 @@
+[
+    {
+      "id": 1,
+      "category": 1,
+      "nombre": "California",
+      "desc": "Descripcion modelo 1",
+      "precio": 8000,
+      "talle": 41,
+      "img": "src/img/Men/california.jpg",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 2,
+      "category": 2,
+      "nombre": "Baloon",
+      "desc": "Descripcion",
+      "precio": 12000,
+      "talle": 42,
+      "img": "src/img/Women/women1.jpg",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 3,
+      "category": 1,
+      "nombre": "Grafity",
+      "desc": "Descripcion",
+      "precio": 10000,
+      "talle": 44,
+      "img": "src/img/Men/grafity.jpg",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 4,
+      "category": 2,
+      "nombre": "Steal",
+      "desc": "Descripcion",
+      "precio": 23000,
+      "talle": 40,
+      "img": "src/img/Women/women2.jpg",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 5,
+      "category": 2,
+      "nombre": "Spread",
+      "desc": "Descripcion",
+      "precio": 7000,
+      "talle": 45,
+      "img": "src/img/Women/women3.jpg",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 6,
+      "category": 1,
+      "nombre": "Roof",
+      "desc": "Descripcion",
+      "precio": 17000,
+      "talle": 42,
+      "img": "src/img/Men/roof.jpg",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 7,
+      "category": 1,
+      "nombre": "Eyeworld",
+      "desc": "Descripcion",
+      "precio": 25000,
+      "talle": 43,
+      "img": "src/img/Men/eyeworld.jpg",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 8,
+      "category": 2,
+      "nombre": "Boom",
+      "desc": "Descripcion",
+      "precio": 21000,
+      "talle": 40,
+      "img": "src/img/Women/women4.jpg",
+      "cantidad": 1
+    },
+
+  {  
+    "id": 9,
+    "category": 1,
+    "nombre": "California",
+    "desc": "Descripcion modelo 1",
+    "precio": 8000,
+    "talle": 41,
+    "img": "public/img/california.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 10,
+    "category": 2,
+    "nombre": "Baloon",
+    "desc": "Descripcion",
+    "precio": 12000,
+    "talle": 42,
+    "img": "public/img/baloon.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 11,
+    "category": 1,
+    "nombre": "Grafity",
+    "desc": "Descripcion",
+    "precio": 10000,
+    "talle": 44,
+    "img": "public/img/grafity.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 12,
+    "category": 2,
+    "nombre": "Steal",
+    "desc": "Descripcion",
+    "precio": 23000,
+    "talle": 40,
+    "img": "public/img/steal.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 13,
+    "category": 2,
+    "nombre": "Spread",
+    "desc": "Descripcion",
+    "precio": 7000,
+    "talle": 45,
+    "img": "public/img/spread.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 14,
+    "category": 1,
+    "nombre": "Roof",
+    "desc": "Descripcion",
+    "precio": 17000,
+    "talle": 42,
+    "img": "public/img/roof.jpg",
+    "cantidad": 1
+  }
+  ]

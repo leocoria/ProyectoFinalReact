@@ -2,3 +2,9 @@
   width: 70px;
   height: 70px;
 }
+
+a{
+  color: gainsboro;
+  padding: 5px;
+  text-decoration: none;
+}
