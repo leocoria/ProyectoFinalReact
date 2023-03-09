@@ -2,7 +2,8 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import { useEffect, useState } from "react";
+import ProductsByCategory from "./components/ProductsByCategory/ProductsByCategory";
+
 
 function App() {
   return (
@@ -14,14 +15,14 @@ function App() {
             exact
             path="/"
             element={
-              <ItemListContainer greeting="Welcome to Stoica Shoes Store!!!" />
+              <ItemListContainer greeting="Welcome to Stoica Store!!!" />
             }
           />
           <Route
             exact
             path="/category/:id"
             element={
-              <ItemListContainer greeting="Envios gratis en compras mayores a $10000" />
+              <ProductsByCategory />
             }
           />
           <Route exact path="/item/:id" element={<ItemDetailContainer />} />

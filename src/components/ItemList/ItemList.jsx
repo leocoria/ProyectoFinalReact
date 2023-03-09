@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./ItemList.css";
 
 const ItemList = (props) => {
@@ -9,7 +9,6 @@ const ItemList = (props) => {
     fetch("https://dummyjson.com/products")
       .then((response) => response.json())
       .then((data) => setProductos(data));
-    console.log(productos);
   }, []);
 
   return (
@@ -21,9 +20,9 @@ const ItemList = (props) => {
             <div class="card-body">
               <h5 class="card-title">{producto.title}</h5>
               <p class="card-text">{producto.description}</p>
-              <a id={producto.id} href="#" class="btn btn-primary">
-                Ver Detalles
-              </a>
+              
+              <div class="d-flex justify-content-center"><button type="button" class="btn btn-primary"><Link to={`/item/${producto.id}`}>Ver detalles</Link></button></div>
+              
             </div>
           </div>
         ))}
