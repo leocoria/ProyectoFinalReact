@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import {collection, getDocs, getFirestore} from "firebase/firestore"
 import "./ItemDetailContainer.css"
 
 const ItemDetailContainer = () => {
   const {id}=useParams();
   const [producto, setProducto] = useState({})
-  console.log(id)
+  
   useEffect(() => {
     fetch(`https://dummyjson.com/products/${id}`)
     .then((response) => response.json())
     .then(dataJson=>setProducto(dataJson))
-    console.log(producto)
   }, [id])
   
 
   return (
     <>
-      <div class="d-flex justify-content-center">
-        <div class="card" style={{width: "30rem"}}>
+      <div class="d-flex justify-content-center" style={{backgroundColor: "gainsboro", padding: "20px"}}>
+        <div class="card" style={{width: "30rem", padding: "20px"}}>
   <img class="card-img-top" src={producto.thumbnail} alt="Card image cap"></img>
   <div class="card-body">
     <h5 className="card-title titulo">{producto.title}</h5>
