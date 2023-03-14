@@ -32,10 +32,10 @@ const Navbar = () => {
                 <Link to={"/"}>Home</Link>
               </li>
               <li class="nav-item">
-                <Link to={"/category/smartphones"}>Smartphones</Link>
+                <Link to={"/category/men"}>Men</Link>
               </li>
               <li class="nav-item">
-                <Link to={"/category/laptops"}>Laptops</Link>
+                <Link to={"/category/women"}>Women</Link>
               </li>
             </ul>
             <CartWidget />

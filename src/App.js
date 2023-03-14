@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import ProductsByCategory from "./components/ProductsByCategory/ProductsByCategory";
 
-
 function App() {
   return (
     <>
@@ -22,7 +21,7 @@ function App() {
             exact
             path="/category/:id"
             element={
-              <ProductsByCategory />
+              <ItemListContainer greeting="Welcome to Stoica Store!!!" />
             }
           />
           <Route exact path="/item/:id" element={<ItemDetailContainer />} />
