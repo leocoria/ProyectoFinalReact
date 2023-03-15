@@ -15,8 +15,6 @@ const GetItemsByCategory = (props) => {
     const db = getFirestore();
     const q = query(collection(db, "items"), where("categoryId", "==", id));
 
-    console.log(q);
-
     getDocs(q).then((snapshot) => {
       if (snapshot === 0) {
         console.log("No hay resultados");
@@ -25,7 +23,7 @@ const GetItemsByCategory = (props) => {
         snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
       );
     });
-  }, []);
+  }, [id]);
 };
 
 export default GetItemsByCategory;

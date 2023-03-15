@@ -8,12 +8,17 @@ const ItemList = (props) => {
       <div className="contenedorTarjetas">
         {props.items?.map((item) => (
           <div class="card" className="cardSize">
-            <img
-              src={item.img}
-              class="card-img-top"
-              style={{ borderRadius: "10px", height: "10rem" }}
-              alt="..."
-            ></img>
+            {item.img ? (
+              <img
+                src={item.img}
+                class="card-img-top"
+                style={{ borderRadius: "10px", height: "10rem" }}
+                alt="..."
+              ></img>
+            ) : (
+              <p>Loading...</p>
+            )}
+
             <div class="card-body">
               <h5
                 class="card-title"

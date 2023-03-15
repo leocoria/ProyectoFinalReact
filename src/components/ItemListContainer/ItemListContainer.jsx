@@ -9,8 +9,6 @@ const ItemListContainer = (props) => {
 
   const [items, setItems] = useState([]);
 
-  console.log(items);
-
   return (
     <>
       <div class="alert alert-dark text-center" role="alert">
@@ -20,12 +18,29 @@ const ItemListContainer = (props) => {
         {id ? (
           <>
             <GetItemsByCategory setItems={setItems} />
-            <ItemList items={items} />
+            {items.length > 0 ? (
+              <ItemList items={items} />
+            ) : (
+              <>
+                <div className="d-flex justify-content-center">
+                  <div
+                    class="spinner-border text-primary"
+                    style={{ height: "100px", width: "100px" }}
+                    role="status"
+                  ></div>
+                  <h3 style={{ fontSize: "35px" }}>Loading.....</h3>
+                </div>
+              </>
+            )}
           </>
         ) : (
           <>
             <GetItems setItems={setItems} />
-            <ItemList items={items} />
+            {items.length > 0 ? (
+              <ItemList items={items} />
+            ) : (
+              <p style={{ fontSize: "35px" }}>Loading.....</p>
+            )}
           </>
         )}
       </div>
