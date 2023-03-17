@@ -11,7 +11,11 @@ const ItemListContainer = (props) => {
 
   return (
     <>
-      <div class="alert alert-dark text-center" role="alert">
+      <div
+        class="alert alert-dark text-center"
+        role="alert"
+        style={{ margin: "0" }}
+      >
         {props.greeting}
       </div>
       <div>
