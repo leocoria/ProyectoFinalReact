@@ -32,6 +32,7 @@ const ItemDetailContainer = () => {
                 class="card-img-top"
                 src={items.img}
                 alt="Card image cap"
+                style={{ height: "25rem" }}
               ></img>
               <div class="card-body">
                 <h5 className="card-title titulo">{items.name}</h5>
