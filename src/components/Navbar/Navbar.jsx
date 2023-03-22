@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import logoStoica from "../../img/logo/logoStoica.png";
 import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";

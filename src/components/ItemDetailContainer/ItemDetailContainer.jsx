@@ -1,11 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import "./ItemDetailContainer.css";
+import { CartContext } from "../Context/CartContext";
 
 const ItemDetailContainer = () => {
+  const { cartItems, addProduct, removeProduct } = useContext(CartContext);
   const { id } = useParams();
   const [items, setItems] = useState();
+
+  console.log(cartItems);
 
   useEffect(() => {
     const db = getFirestore();
@@ -14,7 +18,6 @@ const ItemDetailContainer = () => {
     getDoc(modZap).then((snapshot) => {
       if (snapshot.exists()) {
         setItems({ id: snapshot.id, ...snapshot.data() });
-        console.log(items);
       }
     });
   }, [id]);
@@ -57,7 +60,11 @@ const ItemDetailContainer = () => {
               </ul>
               <div class="card-body">
                 <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-success">
+                  <button
+                    type="button"
+                    onClick={() => addProduct(items, 1)}
+                    class="btn btn-success"
+                  >
                     Agregar
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

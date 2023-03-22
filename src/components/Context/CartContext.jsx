@@ -1,12 +1,20 @@
 import React, { createContext, useState } from "react";
 
-const CartContext = createContext();
+export const CartContext = createContext({
+  cartItems: [],
+  clearCart: () => {},
+  isInCart: () => {},
+  removeProduct: () => {},
+  addProduct: () => {},
+  getTotalQuantity: () => {},
+  getTotal: () => {},
+});
 
 const CartProvider = (props) => {
   const [cartItems, setCartItems] = useState([]);
 
   const clearCart = () => {
-    setCarItems([]);
+    setCartItems([]);
   };
 
   const isInCart = (id) => {
@@ -21,11 +29,11 @@ const CartProvider = (props) => {
   const addProduct = (item, quantity) => {
     if (isInCart(item.id)) {
       setCartItems(
-        cartItems.map((product) => {
+        cartItems.map((product) =>
           product.id === item.id
             ? { ...product, quantity: product.quantity + quantity }
-            : product;
-        })
+            : product
+        )
       );
     } else {
       setCartItems([...cartItems, { ...item, quantity }]);
@@ -46,12 +54,19 @@ const CartProvider = (props) => {
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addProduct, removeProduct, clearCart, isIncart }}
+      value={{
+        cartItems,
+        addProduct,
+        removeProduct,
+        clearCart,
+        isInCart,
+        getTotal,
+        getTotalQuantity,
+      }}
     >
       {props.children}
     </CartContext.Provider>
   );
 };
 
-export { CartProvider };
-export default CartContext;
+export default CartProvider;
