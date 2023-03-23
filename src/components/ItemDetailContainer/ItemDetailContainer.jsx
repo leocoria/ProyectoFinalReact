@@ -8,8 +8,7 @@ const ItemDetailContainer = () => {
   const { cartItems, addProduct, removeProduct } = useContext(CartContext);
   const { id } = useParams();
   const [items, setItems] = useState();
-
-  console.log(cartItems);
+  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     const db = getFirestore();
@@ -61,8 +60,21 @@ const ItemDetailContainer = () => {
               <div class="card-body">
                 <div class="d-flex justify-content-center">
                   <button
+                    className="changeQuantity"
+                    onClick={() => quantity > 1 && setQuantity(quantity - 1)}
+                  >
+                    -
+                  </button>
+                  <div className="divQuantity">{quantity}</div>
+                  <button
+                    className="changeQuantity"
+                    onClick={() => setQuantity(quantity + 1)}
+                  >
+                    +
+                  </button>
+                  <button
                     type="button"
-                    onClick={() => addProduct(items, 1)}
+                    onClick={() => addProduct(items, quantity)}
                     class="btn btn-success"
                   >
                     Agregar

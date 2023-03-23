@@ -1,11 +1,12 @@
-.numeroEnCarrito{
+.numeroEnCarrito {
   color: white;
   background-color: black;
+  opacity: 0.5;
   font-size: small;
   padding: 3px;
   border-radius: 50%;
-  position:relative;
+  position: relative;
   left: -13px;
-  top: -20px;
+  top: -12px;
   opacity: 0.8;
 }

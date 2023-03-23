@@ -1,10 +1,13 @@
-.logo{
+.logo {
   width: 70px;
   height: 70px;
 }
 
-a{
+a {
   color: gainsboro;
   padding: 5px;
   text-decoration: none;
+}
+a:hover {
+  color: orange;
 }
