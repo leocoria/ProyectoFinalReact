@@ -1,6 +1,28 @@
 .cartContainer {
-  background-color: orange;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
   height: 84.5vh;
   display: flex;
   flex-direction: column;
+}
+.cartItems{
+  font-weight: 600;
+  padding: 20px;
+}
+.deleteButton{
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+
+}
+.smallItemImg{
+  border-radius: 5px;
+  padding:3px;
+  background-color:darkgray;
+  margin:10px;
+  height: 50px;
+  width: 50px;
 }
