@@ -30,7 +30,10 @@ const ItemList = (props) => {
               >
                 {item.name}
               </h5>
-              <p class="card-text">{item.description}</p>
+              <p class="card-text" style={{
+                  fontWeight: "600",
+                  textAlign: "center",
+                }}> ${item.price}</p>
 
               <div class="d-flex justify-content-center">
                 <button
