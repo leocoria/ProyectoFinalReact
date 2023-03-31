@@ -30,10 +30,16 @@ const ItemList = (props) => {
               >
                 {item.name}
               </h5>
-              <p class="card-text" style={{
+              <p
+                class="card-text"
+                style={{
                   fontWeight: "600",
                   textAlign: "center",
-                }}> ${item.price}</p>
+                }}
+              >
+                {" "}
+                ${item.price}
+              </p>
 
               <div class="d-flex justify-content-center">
                 <button
@@ -42,7 +48,9 @@ const ItemList = (props) => {
                   class="btn btn-primary"
                   style={{ margin: "20px" }}
                 >
-                  <Link to={`/item/${item.id}`}>Ver detalles</Link>
+                  <Link to={`/ProyectoFinalReact/item/${item.id}`}>
+                    Ver detalles
+                  </Link>
                 </button>
               </div>
             </div>

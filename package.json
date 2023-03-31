@@ -1,7 +1,7 @@
 {
   "name": "primera-entrega-react",
   "version": "0.1.0",
-  "homepage": "http://leocoria.github.io/",
+  "homepage": "http://leocoria.github.io/ProyectoFinalReact",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

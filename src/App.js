@@ -14,20 +14,28 @@ function App() {
           <Routes>
             <Route
               exact
-              path="/"
+              path="/ProyectoFinalReact"
               element={
                 <ItemListContainer greeting="Welcome to Stoica Store!!!" />
               }
             />
             <Route
               exact
-              path="/category/:id"
+              path="/ProyectoFinalReact/category/:id"
               element={
                 <ItemListContainer greeting="Welcome to Stoica Store!!!" />
               }
             />
-            <Route exact path="/item/:id" element={<ItemDetailContainer />} />
-            <Route exact path="/Cart" element={<CartContainer />} />
+            <Route
+              exact
+              path="/ProyectoFinalReact/item/:id"
+              element={<ItemDetailContainer />}
+            />
+            <Route
+              exact
+              path="/ProyectoFinalReact/Cart"
+              element={<CartContainer />}
+            />
           </Routes>
         </BrowserRouter>
       </CartProvider>

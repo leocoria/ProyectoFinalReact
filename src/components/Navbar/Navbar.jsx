@@ -12,7 +12,7 @@ const Navbar = () => {
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <Link to={"/"}>
+          <Link to={"/ProyectoFinalReact"}>
             <img src={logoStoica} className="logo" alt="Logo Stoica" />
           </Link>
           <button
@@ -29,13 +29,13 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link to={"/"}>Home</Link>
+                <Link to={"/ProyectoFinalReact"}>Home</Link>
               </li>
               <li class="nav-item">
-                <Link to={"/category/men"}>Men</Link>
+                <Link to={"/ProyectoFinalReact/category/men"}>Men</Link>
               </li>
               <li class="nav-item">
-                <Link to={"/category/women"}>Women</Link>
+                <Link to={"/ProyectoFinalReact/category/women"}>Women</Link>
               </li>
             </ul>
             <CartWidget />
